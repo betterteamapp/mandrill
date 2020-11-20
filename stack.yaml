@@ -1,5 +1,8 @@
-flags: {}
+resolver: lts-16.22
+
 packages:
-- '.'
-extra-deps: []
-resolver: lts-13.0
+- .
+
+nix:
+  pure: false
+  packages: [zlib pkgconfig]
