@@ -2,4 +2,10 @@ flags: {}
 packages:
 - '.'
 extra-deps: []
-resolver: lts-13.0
+resolver: lts-18.1
+
+
+nix:
+  path: ["nixpkgs=https://github.com/NixOS/nixpkgs/tarball/860b56be91fb874d48e23a950815969a7b832fbc"]
+  pure: false
+  packages: [zlib]
